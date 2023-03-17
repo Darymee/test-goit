@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": false
+  },
+  {
+    "id": 2,
+    "user": "Spiderman",
+    "tweets": 1000,
+    "followers": 6199,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1090/1090806.png"
+  },
+  {
+    "id": 3,
+    "user": "Ironman",
+    "tweets": 2100,
+    "followers": 65099,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/892/892721.png"
+  },
+  {
+    "id": 4,
+    "user": "Batman",
+    "tweets": 5100,
+    "followers": 18004,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/663/663076.png"
+  },
+  {
+    "id": 5,
+    "user": "Mr. Meow",
+    "tweets": 10100,
+    "followers": 100000,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/4322/4322991.png"
+  },
+  {
+    "id": 6,
+    "user": "Baby Panda",
+    "tweets": 101232,
+    "followers": 6999,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1326/1326377.png"
+  },
+  {
+    "id": 7,
+    "user": "Deadpool",
+    "tweets": 7545,
+    "followers": 4342,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1090/1090740.png"
+  }
+]
