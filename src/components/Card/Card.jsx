@@ -1,5 +1,7 @@
 import { useDispatch } from 'react-redux';
 
+import { followToggler } from 'redux/slice/usersSlice';
+
 import { ReactComponent as Logo } from 'images/logo.svg';
 import mainImg from 'images/main-img.png';
 import dummyAvatar from 'images/avatar.png';
@@ -12,7 +14,6 @@ import {
   TextWrapper,
   Button,
 } from './Card.styled';
-import { followToggler } from 'redux/slice/usersSlice';
 
 export const Card = ({ info }) => {
   const dispatch = useDispatch();
