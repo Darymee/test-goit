@@ -35,7 +35,7 @@ export const Card = ({ info }) => {
 
   return (
     <CardWrapper>
-      <Logo />
+      <Logo width={76} height={22} />
       <MainImage src={mainImg} alt="main-img" />
 
       <AvatarWrapper>
