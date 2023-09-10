@@ -24,5 +24,6 @@ Start with npm
 - Created local user database
 - Stylization made with styled-components
 - Follow/unfollow functionality implemented with Redux Toolkit / Redux Persist
+- Added filtering of the list of following users
 
 ![Result](./assets/task-result.png)
