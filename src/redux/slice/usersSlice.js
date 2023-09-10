@@ -7,6 +7,7 @@ import userList from 'constants/users.json';
 
 const initialState = {
   userList,
+  filterType: 'all',
 };
 
 export const usersSlice = createSlice({
@@ -21,6 +22,9 @@ export const usersSlice = createSlice({
         }
       }
     },
+    sortList(state, { payload }) {
+      state.filterType = payload;
+    },
   },
 });
 
@@ -34,4 +38,4 @@ export const persistedReducer = persistReducer(
   usersSlice.reducer
 );
 
-export const { followToggler } = usersSlice.actions;
+export const { followToggler, sortList } = usersSlice.actions;

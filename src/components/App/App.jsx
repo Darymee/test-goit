@@ -1,22 +1,33 @@
 import { useSelector } from 'react-redux';
 
-import { selectUsers } from 'redux/selectors';
+import { selectFilterType, selectUsers } from 'redux/selectors';
 
 import { Card } from '../Card/Card';
 
-import { PageWrapper, CardList } from './App.styled';
+import { PageWrapper, Title, CardList, Message } from './App.styled';
+import { Filter } from './Filter/Filter';
 
 export const App = () => {
   const followingList = useSelector(selectUsers);
+  const selectedType = useSelector(selectFilterType);
+
+  const sortList = () =>
+    selectedType === 'following'
+      ? followingList.filter(item => item.following)
+      : followingList;
 
   return (
     <PageWrapper>
-      {followingList.length > 0 && (
+      <Title>Card Tweets</Title>
+      <Filter />
+      {sortList().length > 0 ? (
         <CardList>
-          {followingList.map(({ id, ...info }) => (
+          {sortList().map(({ id, ...info }) => (
             <Card key={id} info={info} />
           ))}
         </CardList>
+      ) : (
+        <Message>No following users</Message>
       )}
     </PageWrapper>
   );
