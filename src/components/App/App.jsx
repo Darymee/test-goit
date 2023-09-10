@@ -18,7 +18,7 @@ export const App = () => {
 
   return (
     <PageWrapper>
-      <Title>Card Tweets</Title>
+      <Title>CARD TWEETS</Title>
       <Filter />
       {sortList().length > 0 ? (
         <CardList>
